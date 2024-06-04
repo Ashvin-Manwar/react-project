@@ -7,7 +7,11 @@ let [counter,setCounter]  = useState(15)
   const addValue=()=>{
     if (counter<20) {
       console.log("clicked", counter)
-      setCounter(counter+1)
+      setCounter((precCounter)=> precCounter +1)
+      console.log(precCounter => precCounter+1);
+      setCounter(precCounter => precCounter+1)
+      setCounter(precCounter => precCounter+1)
+      setCounter(precCounter => precCounter+1)
       
     }
   }
